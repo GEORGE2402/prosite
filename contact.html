@@ -4,32 +4,59 @@
 <html>
 
 <head>
-<h1>Contact Me</h1>
-
-</head>
-
+    <title>Prosite</title> 
+    </head>
 <body>
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-    <form method="post" action="process.php" enctype='multipart/form-data'>
-        <label>Name<br>
-            <input type="text" name="name" required><span class="error">*</span><br>
-        </label>
+    
+    <!-- navigation -->
+    
+    <header>
+    <img src="assets/img/georgelogo1.png">
+    
+   <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+					
+					</ul>
+		</nav>
+    </header>
+    <h2>Contact</h2>
+<iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+    <form>
+    <label> Name<br>
+    <input type="text" name="fullname" requied> </label>
+    <br>
+    <label>Email<br>
+    <input type="email" name="eml" requied></label>
+    <br>
+    <p>Job Type</p>
+    <label>
+    <input type="radio" name="job" value="pt">Part Time </label>
+    <br>
+    <label>
+        <input type="radio" name="ct" value="ft"> Contract</label>
         <br>
-        <label>E-mail<br>
-            <input type="email" name="email" required><span class="error">*</span><br>
-        </label>
+        <label>
+    <input type="radio" name="ft" value="pt">Full Time </label>
+    <br>
+    <label>
         <br>
-        <label>Job Type
-            <br>
-            <input type="radio" name="project" value="Part Time">Part Time
-            <br>
-            <input type="radio" name="project" value="Contract">Contarct
-            <br>
-            <td></td>
-            <label> Specifications<br></label>
-
-        <input type="submit" value="Submit">
+        <label>Specification<br>
+            <textarea name="spec"></textarea>
+            </label>
+        <br>
+        <input type="Submit" value="send">
     </form>
+                                            
+    <!--footer-->
+    <footer>
+    <h2>LOGO</h2>
+    <p>39 John Street<br>
+    Brooklyn NY 11205</p>
+    
+<p>Copyright &copy; 2019 Shurland George All rights reserved &reg;</p>
+</footer>
 
 </body>
 
